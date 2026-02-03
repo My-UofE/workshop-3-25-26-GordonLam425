@@ -19,10 +19,11 @@ public class AverageSquares {
         double sum = 0;
         double i = startNum;
 
-        while (i <= endNum) {
+        do {
             sum += i * i;
             i++;
-        }
+        } while (i <= endNum);
+       
         double average = sum / (endNum - startNum + 1);
         System.out.println(average);
     }
